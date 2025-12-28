@@ -24,6 +24,7 @@ public:
             }
             tail= tail->next;
         }
+        // ye last wali conidtion uske liye hai jb ek list k sare elements sorted m chlejaate hein to dusri list ko jodne k liye use kiya hai
         tail->next = head1 ? head1 : head2;
         return dummy.next;
     }
